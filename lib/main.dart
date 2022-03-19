@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:nooma/presentation/base/dependencies_initializer_widget/dependencies_initializer_widget.dart';
+import 'package:nooma/presentation/base/nooma_app.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,14 +11,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Nooma',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Container(
-        color: Colors.white,
-      ),
+    return DependenciesInitializerWidget.create(
+      child: const NoomaApp(),
     );
   }
 }
