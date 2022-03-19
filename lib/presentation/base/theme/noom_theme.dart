@@ -13,8 +13,8 @@ class NoomTheme extends InheritedWidget {
 
   final data = const NoomThemeData();
 
-  NoomTheme? of(BuildContext context) {
-    return context.dependOnInheritedWidgetOfExactType<NoomTheme>();
+  static NoomThemeData of(BuildContext context) {
+    return context.dependOnInheritedWidgetOfExactType<NoomTheme>()!.data;
   }
 
   @override
