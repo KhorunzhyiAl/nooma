@@ -11,4 +11,5 @@ class NoomThemeData {
   Color get neptune => const Color(0xff7eacba);
   Color get mineShaft => const Color(0xff2e2e2e);
   Color get wildSand => const Color(0xfff4f4f4);
+  Color get white => const Color(0xffffffff);
 }

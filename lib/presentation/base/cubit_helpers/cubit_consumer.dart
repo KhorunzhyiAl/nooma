@@ -14,7 +14,11 @@ class CubitConsumer<CubitT extends StateStreamable<StateT>, StateT> {
 
   Widget listener({
     required Function(BuildContext, StateT) listener,
+    Widget? child,
   }) {
-    return BlocListener<CubitT, StateT>(listener: listener);
+    return BlocListener<CubitT, StateT>(
+      listener: listener,
+      child: child,
+    );
   }
 }

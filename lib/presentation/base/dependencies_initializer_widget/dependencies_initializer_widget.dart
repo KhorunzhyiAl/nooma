@@ -2,6 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:nooma/presentation/base/cubit_helpers/cubit_consumer.dart';
 import 'package:nooma/presentation/base/dependencies_initializer_widget/cubit/dependencies_initializer_cubit.dart';
+import 'package:nooma/presentation/base/theme/noom_theme.dart';
 
 class DependenciesInitializerWidget extends StatelessWidget
     with
@@ -25,6 +26,8 @@ class DependenciesInitializerWidget extends StatelessWidget
 
   @override
   Widget build(BuildContext context) {
-    return child;
+    return NoomTheme(
+      child: child,
+    );
   }
 }
