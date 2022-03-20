@@ -15,7 +15,7 @@ final getIt = GetIt.instance;
   preferRelativeImports: true,
   asExtension: false,
 )
-Future<void> initDependencies() async {
+Future<void> initGetIt() async {
   $initGetIt(
     getIt,
     environment: environment,

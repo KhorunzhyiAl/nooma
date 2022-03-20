@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CubitConsumer<CubitT extends StateStreamable<StateT>, StateT> {
   Widget builder({
-    required Widget Function(BuildContext, dynamic) builder,
+    required Widget Function(BuildContext, StateT) builder,
     BlocBuilderCondition<StateT>? buildWhen,
   }) {
     return BlocBuilder<CubitT, StateT>(

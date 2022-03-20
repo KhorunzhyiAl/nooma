@@ -20,7 +20,7 @@ dependencies:
   injectable_generator: ^1.5.3
   flutter_bloc: ^8.0.1
   logger: ^1.1.0
-  easy_localization: ^1.3.0
+  easy_localization: ^3.0.0
 
 dev_dependencies:
   flutter_test:
@@ -29,6 +29,8 @@ dev_dependencies:
   flutter_lints: ^1.0.0
 
 flutter:
-
+  assets:
+    - assets/translations/
+    
   uses-material-design: true
   
