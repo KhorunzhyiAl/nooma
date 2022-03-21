@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:nooma/presentation/base/theme/noom_theme_data.dart';
 
 class NoomTheme extends InheritedWidget {
-  const NoomTheme({
+  NoomTheme({
     required Widget child,
     Key? key,
   }) : super(
@@ -11,7 +11,7 @@ class NoomTheme extends InheritedWidget {
           child: child,
         );
 
-  final data = const NoomThemeData();
+  final data = NoomThemeData();
 
   static NoomThemeData of(BuildContext context) {
     return context.dependOnInheritedWidgetOfExactType<NoomTheme>()!.data;
