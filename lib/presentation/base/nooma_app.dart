@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nooma/presentation/localization/gen/locale.g.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:nooma/presentation/main_tabs_screen/main_tabs_screen.dart';
 
 class NoomaApp extends StatelessWidget {
   const NoomaApp({Key? key}) : super(key: key);
@@ -12,19 +12,7 @@ class NoomaApp extends StatelessWidget {
       supportedLocales: context.supportedLocales,
       locale: context.locale,
       title: 'nooma',
-      home: const TestWidget(),
+      home: MainTabsScreen.create(),
     );
-  }
-}
-
-class TestWidget extends StatelessWidget {
-  const TestWidget({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    final test = LocaleKeys.helloWorld.tr();
-    debugPrint(test);
-
-    return Container();
   }
 }
