@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nooma/presentation/base/theme/noom_theme.dart';
+import 'package:nooma/presentation/base/theme/nooma_theme.dart';
 import 'package:nooma/presentation/common/cubit_helpers/cubit_consumer.dart';
 import 'package:nooma/presentation/localization/gen/locale.g.dart';
 import 'package:nooma/presentation/main_tabs_screen/cubit/main_tabs_cubit.dart';
@@ -28,7 +28,7 @@ class TabsWidget extends CubitConsumerWidget<MainTabsCubit, MainTabsState> {
 
   @override
   Widget build(BuildContext context) {
-    final theme = NoomTheme.of(context);
+    final theme = NoomaTheme.of(context);
 
     return Container(
       height: 60,
@@ -66,7 +66,7 @@ class TabsWidget extends CubitConsumerWidget<MainTabsCubit, MainTabsState> {
             isSelected: selectedTab == i,
           ),
         ),
-        const SizedBox(width: 5),
+        if (i != _tabsData.length - 1) const SizedBox(width: 5),
       ],
     ];
   }

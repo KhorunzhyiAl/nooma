@@ -1,6 +1,6 @@
 import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
-import 'package:nooma/presentation/base/dependencies/environments.dart';
+import 'package:nooma/presentation/base/injectable/environments.dart';
 import 'init_dependencies.config.dart';
 
 const environment = String.fromEnvironment(

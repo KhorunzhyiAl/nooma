@@ -1,4 +1,29 @@
 {
     "home": "Home",
-    "settings": "Settings"
+    "settings": "Settings",
+    "language": "Language",
+    "languageIsName": "Language: {}",
+    "yourEstimatedVocab": "Your estimated vocabulary",
+    "lookUpWord": "Look up a word",
+    "discoverNew": "Discover new",
+    "practice": "Practice",
+    "todaysGoal": {
+        "zero": "Today's goal: zero???",
+        "one": "Today's goal: {} word???",
+        "many": "Today's goal: {} words",
+        "other": "Today's goal: {} words"
+    },
+    "currentlyLearning": {
+        "one": "Currently learning: {} word",
+        "many": "Currently learning: {} words",
+        "other": "Currently learning: {} words"
+    },
+    "nofWords": {
+        "zero": "{} words",
+        "one": "{} word",
+        "many": "{} words",
+        "other": "{} words"
+    },
+    "practiceNewWords": "Practice the new words",
+    "findWordsYouDontKnow": "Find the words you don't know yet"
 }

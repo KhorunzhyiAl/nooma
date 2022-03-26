@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nooma/presentation/base/theme/noom_theme.dart';
-import 'package:nooma/presentation/base/theme/noom_theme_data.dart';
+import 'package:nooma/presentation/base/theme/nooma_theme.dart';
+import 'package:nooma/presentation/base/theme/nooma_theme_data.dart';
 
 class TabWidget extends StatelessWidget {
   const TabWidget({
@@ -18,14 +18,14 @@ class TabWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = NoomTheme.of(context);
+    final theme = NoomaTheme.of(context);
 
     return ElevatedButton(
       onPressed: onPressed,
       style: ButtonStyle(
         elevation: MaterialStateProperty.all(0),
         backgroundColor: MaterialStateProperty.all(
-          isSelected ? theme.wildSand : theme.transparent,
+          isSelected ? theme.concrete : theme.transparent,
         ),
         overlayColor: MaterialStateProperty.all(theme.black10),
       ),
@@ -44,7 +44,7 @@ class TabWidget extends StatelessWidget {
         ),
         Text(
           name,
-          style: theme.tabsTextStyle,
+          style: theme.captionBoldTextStyle,
         ),
       ],
     );
