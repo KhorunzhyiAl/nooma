@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:nooma/presentation/base/theme/noom_theme_data.dart';
+import 'package:nooma/presentation/base/theme/nooma_theme_data.dart';
 
-class NoomTheme extends InheritedWidget {
-  NoomTheme({
+class NoomaTheme extends InheritedWidget {
+  NoomaTheme({
     required Widget child,
     Key? key,
   }) : super(
@@ -14,11 +14,11 @@ class NoomTheme extends InheritedWidget {
   final data = NoomThemeData();
 
   static NoomThemeData of(BuildContext context) {
-    return context.dependOnInheritedWidgetOfExactType<NoomTheme>()!.data;
+    return context.dependOnInheritedWidgetOfExactType<NoomaTheme>()!.data;
   }
 
   @override
-  bool updateShouldNotify(NoomTheme oldWidget) {
+  bool updateShouldNotify(NoomaTheme oldWidget) {
     return oldWidget.data != data;
   }
 }

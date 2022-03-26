@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:nooma/presentation/base/theme/noom_theme.dart';
+import 'package:nooma/presentation/base/theme/nooma_theme.dart';
 import 'package:nooma/presentation/localization/localization_widget.dart';
 
 class DependenciesWidget extends StatelessWidget {
@@ -12,7 +12,7 @@ class DependenciesWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return NoomTheme(
+    return NoomaTheme(
       child: LocalizationWidget(
         child: child,
       ),
